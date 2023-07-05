@@ -10,11 +10,20 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
+    const agua = Number(prompt(`Quanto você paga de água por mês?`));
+    const energia = Number(prompt(`Quanto você gasta de energia elétrica por mês?`));
+    const telefone = Number(prompt(`Quanto você gasta de telefone por mês?`));
+    const mercado = Number(prompt(`Quanto você gasta no Supermercado por mês?`));
+    const salario = Number(prompt(`Quanto você recebe de salário?`));
 
     //Processamento
+    let gastos = agua + energia + telefone + mercado;
+    let faltam = gastos - salario;
+    let sobras = salario - gastos;
 
-    
+    (salario > gastos) ? alert(`Com seu salário você consegue comprar todas essas coisas e ainda sobram R$ ${sobras}`) 
+    : alert(`Você não tem dinheiro suficiente para tudo isso, faltará R$ ${faltam}`);
+
     //Saída
     
 </script>

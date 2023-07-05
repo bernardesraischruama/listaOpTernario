@@ -8,9 +8,14 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+    const horasTrabalhadas = Number(prompt(`Quantas horas você trabalha semanalmente?`));
+    const remuneraçao = Number(prompt(`Quanto você recebe por hora trabalhada?`));
+    
     //Processamento
+    let remuneracaoSemana = horasTrabalhadas * remuneraçao
+    (horasTrabalhadas <= 45) ? alert(`Não haverá adicional`)
+    : (horasTrabalhadas <= 60) ? alert(`haverá um adicional de 20%, você reberá R$${remuneracaoSemana * 20 /100}`)
+    : alert(`Haverá um adicional de 30%, você reberá R$${remuneracaoSemana * 30 / 100}`);
 
     
     //Saída

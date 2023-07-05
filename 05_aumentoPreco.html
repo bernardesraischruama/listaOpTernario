@@ -8,11 +8,17 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const preço = Number(prompt(`Qual é o preço do produto:`));
 
     //Processamento
-
-    
+    let aumento20 = preço + preço * 20 / 100;
+    let aumento15 = preço + preço * 15 / 100;
+    let aumento10 = preço + preço * 10 / 100;
+    let aumento5= preço + preço * 5 / 100;
+    (preço <= 280 ) ? alert(`O preço com 20% de aumento ficou ${aumento20}`);
+        : (preço <= 700) ? alert(`O preço com 15% de aumento ficou ${aumento15}`);
+           : (preço <=1500) ? alert (`O preço com 10% ficou ${aumento15}`);
+              : (preço >=1500)? alert(`O preço com 5% ficou ${aumento5}´);
     //Saída
 
 </script>

@@ -10,11 +10,16 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const nota = Number(prompt(`Qual foi sua nota?`));
 
     //Processamento
+    (nota > 9.0 && nota < 10.0) ? alert(`Nota A`)
+        : (nota > 8.0 && nota < 8.9) ? alert(`Nota B`)
+            : (nota > 7.0 && nota < 7.9) ? alert(` Nota C`)
+                : (nota > 6.0 && nota < 6.9) ? alert(`Nota D`)
+                    : alert(`Nota E`)
 
-    
+
     //Saída
 
 </script>

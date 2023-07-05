@@ -8,11 +8,15 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const idadecao = Number(prompt(`Qual é a idade do seu cão?`));
+    const porte = prompt(`Qual é o porte do seu cão? (Responda com G, M ou P)`).toLowerCase()
+
+        //Processamento
+        (porte == "G") ? alert(`Seu cão tem ${idadecao * 7} anos caninos`)
+        : (porte == "M") ? alert(`Seu cão tem ${idadecao * 6} anos caninos`)
+            : alert(`Seu cão tem ${idadecao * 5} anos caninos`)
 
 
-    //Processamento
-
-    
     //Saída
 
 </script>
